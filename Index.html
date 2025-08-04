@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vault&Veil.bn</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- HEADER -->
+  <header class="text-center py-10">
+    <img src="vaultveil-logo.png" alt="Vault&Veil.bn Logo" class="mx-auto w-32">
+    <h1 class="text-3xl font-bold mt-4">Vault&Veil.bn</h1>
+    <p class="text-gray-400 mt-2">Unbox the Unknown</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-xl mx-auto p-6">
+
+    <!-- PRODUCT DISPLAY -->
+    <div class="bg-gray-800 rounded-lg p-6 shadow-lg mb-10">
+      <img src="mystery-box.jpg" alt="Mystery Parcel" class="rounded w-full mb-4">
+      <h2 class="text-2xl font-semibold">Mystery Parcel</h2>
+      <p class="mt-2 text-gray-300">Get a surprise box filled with unknown items! Perfect for thrill seekers and curious shoppers.</p>
+      <p class="mt-4 text-yellow-400 text-xl font-bold">BND 50.00</p>
+      <a href="#checkout" class="mt-6 inline-block bg-yellow-500 text-black font-bold py-2 px-4 rounded hover:bg-yellow-600">Buy Now</a>
+    </div>
+
+    <!-- CHECKOUT FORM -->
+    <section id="checkout" class="bg-gray-900 rounded-lg p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Checkout</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm">Full Name</label>
+          <input type="text" name="name" class="w-full mt-1 p-2 rounded bg-gray-700 border border-gray-600 text-white" required>
+        </div>
+        <div>
+          <label class="block text-sm">Email</label>
+          <input type="email" name="email" class="w-full mt-1 p-2 rounded bg-gray-700 border border-gray-600 text-white" required>
+        </div>
+        <div>
+          <label class="block text-sm">Delivery Address</label>
+          <textarea name="address" rows="3" class="w-full mt-1 p-2 rounded bg-gray-700 border border-gray-600 text-white" required></textarea>
+        </div>
+        <div>
+          <label class="block text-sm mb-2">Payment Method</label>
+          <select name="payment" class="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white">
+            <option value="card">Credit / Debit Card</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="qr">QR Pay</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm">Upload Payment Proof (if required)</label>
+          <input type="file" name="payment_proof" class="w-full mt-1 p-2 rounded bg-gray-700 border border-gray-600 text-white">
+        </div>
+        <button type="submit" class="bg-yellow-500 text-black font-bold py-2 px-4 rounded hover:bg-yellow-600">Place Order - BND 50.00</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    &copy; 2025 Vault&Veil.bn. All rights reserved.
+  </footer>
+
+</body>
+</html>
